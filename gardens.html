@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-color: rgb(255, 239, 219);
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+     
+}
+
+.header{
+display: flex;
+flex-direction: row;
+background-color: #1a1a1a;
+padding-left: 80px;
+gap: 40px;
+height:50px;
+align-items: center;
+position: relative;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 2px;
+    background:orange;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+a:hover{
+ color: orange;
+ cursor: pointer;   
+}
+
+img{
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <a href="hr.html" target="self">Back to Heritage</a>
+        
+     </div>
+       <div>
+           <h2>
+               Brindavan Gardens
+           </h2>
+       <img src="https://imgs.search.brave.com/KNoLnFoLc3Z4TCTBuOpgQq1PmqoYluWow7i__Sx0Uf0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudG9paW1nLmNv/bS9waG90by9tc2lk/LTUxNjgwMjI4LHdp/ZHRoLTk2LGhlaWdo/dC02NS5jbXM">
+       <p>
+        The Brindavan Gardens is a garden located 12 k.ms from the city of Mysore in the Mandya District of the Indian State of Karnataka. It lies adjoining the Krishnarajasagara Dam which is built across the river Kaveri. The work on laying out this garden was started in the year 1927 and completed in 1932. Visited by close to 2 million tourists per year, the garden is one of the major attractions of Srirangapatna. Sir Mirza Ismail, the Deewan of Mysore, a man with a penchant for gardens, founded the Brindavan Gardens (Krishnaraja Sagar Dam in particular) and built the Cauvery River high-level canal to irrigate 120,000 acres (490 km2) in modern Mandya district. The gardens were designed by German botanist and landscape designer Gustav Hermann Krumbiegel.       </p>
+       <h3>Gardens</h3>
+       <p>
+        The garden is maintained by the Cauvery Niravari Nigama (Cauvery Irrigation Corporation), a Government of Karnataka enterprise. It is spread across an area of 60 acres (240,000 m2). Adjoining it is also a fruit orchard spread across 75 acres (300,000 m2) and 2 horticultural farms, Nagavana (30 acres) and Chandravana (5 acres). The garden is laid out in 3 terraces which contain water fountains, Ficus trees, foliage plants such as Duranta plumaria and Euphorbia and flowering plants like Celosia, Marigold and bougainvillea. The garden is open to the public and an entry-fee is charged. The garden also has topiary works (sculptures of animals created by clipping shrubs), pergolas (shaded passageway covered by creepers) and gazebos. The main attraction of the park is the musical fountain in which bursts of water are synchronised to the music of songs. There is also a lake within the garden with boating facilities available for visitors.
+
+        The garden was renovated in 2005 with a cost of Rs. 50 million. The renovation included sprucing up the musical fountain using a digitised system and repairs of dysfunctional fountains. In 2007, the gardens were closed for a brief duration as a safety measure to avoid trouble related to the Cauvery water dispute.       </p>
+       </div>
+</body>
+</html>

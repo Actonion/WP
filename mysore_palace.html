@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-color: rgb(255, 239, 219);
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+     
+}
+
+.header{
+display: flex;
+flex-direction: row;
+background-color: #1a1a1a;
+padding-left: 80px;
+gap: 40px;
+height:50px;
+align-items: center;
+position: relative;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 2px;
+    background:orange;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+a:hover{
+ color: orange;
+ cursor: pointer;   
+}
+
+img{
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <a href="hr.html" target="self">Back to Heritage</a>
+        
+     </div>
+       <div>
+           <h2>
+               Mysore Palace
+           </h2>
+       <img src="https://imgs.search.brave.com/Zh4jgjBLjlKagWIhQhs0hKHmCBX3nzD5egdzd_Yn_eY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcy/MTI0MDMyL3Bob3Rv/L215c29yZS1wYWxh/Y2UtYXQtZHVzay5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/cGFPNzRDX2RWc1kx/NEliSzBSTnFzMFRE/LWxTdGVReS1BVzVD/blFGRWJfND0">
+       <p>
+        Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence. It is located in Mysore, Karnataka, India. It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills eastward. Mysore is commonly described as the 'City of the Palaces', and there are seven palaces including this one. However, the Mysore Palace refers specifically to the one within the new fort.
+       </p>
+       <h3>History</h3>
+       <p>
+        The last palace, now known as the Old Palace or the Wooden Palace, burned to ashes during the wedding of Jayalakshammani, the eldest daughter of Chamaraja Wodeyar in 1896. Maharaja Krishnaraja Wodeyar IV and his mother Maharani Kempananjammanni Devi commissioned the British architect Henry Irwin to build a new palace.E.W. Fritchley worked as a consulting engineer. Meanwhile, the royal family stayed in the nearby Jaganmohan Palace. Construction was overseen by an executive engineer in the Mysore Palace division. He conducted elaborate architectural studies during his visits to Delhi, Madras, and Calcutta, and these were used to plan the new palace. The construction cost was placed at Rs 41,47,913 (around $ 30 million adjusted to inflation) and the palace was completed in 1912.
+       </p>
+       <h3>Architecture</h3>
+       <p>Designed by Henry Irwin, an English architect, the style is that of Indo-Saracenic architecture, with elements from Islamic, Rajput, and Gothic architecture styles. It is a three-story, gray granite, structure, about 75 m (245 ft) long and about 48 m (156 ft) wide. There are square towers, five stories tall, at each of the cardinal points, topped with pink domes.The tallest tower, 44 m (145 ft) tall,is at the centre of the palace and is topped with a gold plated dome.</p>
+       </div>
+</body>
+</html>

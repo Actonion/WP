@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-color: rgb(255, 239, 219);
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+     
+}
+
+.header{
+display: flex;
+flex-direction: row;
+background-color: #1a1a1a;
+padding-left: 80px;
+gap: 40px;
+height:50px;
+align-items: center;
+position: relative;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 2px;
+    background:orange;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+a:hover{
+ color: orange;
+ cursor: pointer;   
+}
+
+img{
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <a href="hr.html" target="self">Back to Heritage</a>
+        
+     </div>
+       <div>
+           <h2>
+               Jaganmohan Palace
+           </h2>
+       <img src="https://imgs.search.brave.com/aqNtfxLlo2Onsn6OzDSUUPgcpcKBeGIod2nUdsssWDU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oYmxp/bWcubW10Y2RuLmNv/bS9jb250ZW50L2h1/YmJsZS9pbWcvbXlz/b3JlL21tdC9hY3Rp/dml0aWVzL21fSmFn/bW9oYW4lMjBQYWxh/Y2VfMV9sXzM1M181/ODkuanBn">
+       <p>
+        Sri Jayachamarajendra Art Gallery, commonly known by its former name Jaganmohana Palace, is a former royal mansion, arts museum and auditorium, and formerly an alternative royal residence of the ruling maharaja of Mysore, located in Mysore, India, about 200m (600ft) to the west of Mysore Palace. Began in 1856 and completed in 1861, the palace is one of the oldest modern structures in Mysore.
+
+        The royal family would reside at the palace when renovations and construction works would be underway at Mysore Palace. The last time the palace was inhabited by the royal family was in 1897 when the old Mysore Palace burned down due to a fire accident. The ruling king at this time was Maharaja Krishnaraja Wadiyar IV.</p>
+       <h3>History</h3>
+       <p>
+        Over the Nagar uprising of 1830, Maharaja Krishnaraja Wodeyar III was deposed and the Mysore Commission was instituted. At the same time, Mysore Palace was seized from the maharaja by the commission. In these circumstances, the deposed maharaja commissioned the building of a large mansion, with several public and private courtyards, for the use of his family and retainers at a site which was a short distance from the grounds of his old palace. Whereas the old palace looked like a stone citadel from outside but was mainly made of wood inside, the new palace was designed to have a lighter, more modern look and a more comfortable internal layout. It was thus built with brick and mortar, reflecting many architectural embellishments, often made of valuable woods and precious stones.       </p>
+       <h3>Architecture</h3>
+       <p>The palace is built in traditional Hindu style and has three storeys. A mural featured in the palace is the earliest known picture of Mysore Dasara and has been painted using vegetable dyes. A family tree of the Wadiyars tracing the lineage of the royal family is also painted on a wall in the palace. Two wooden artefacts displaying the Dashavatara, the ten incarnations of Lord Vishnu, are also present in the palace.</p>
+       </div>
+</body>
+</html>

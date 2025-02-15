@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-color: rgb(255, 239, 219);
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+     
+}
+
+.header{
+display: flex;
+flex-direction: row;
+background-color: #1a1a1a;
+padding-left: 80px;
+gap: 40px;
+height:50px;
+align-items: center;
+position: relative;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 2px;
+    background:orange;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+}
+a:hover{
+ color: orange;
+ cursor: pointer;   
+}
+
+img{
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <a href="hr.html" target="self">Back to Heritage</a>
+        
+     </div>
+       <div>
+           <h2>
+               Mysore Zoo
+           </h2>
+       <img src="https://imgs.search.brave.com/yMeH2ilqzbkYAmV1kCtp2li0VM8Kh2OTIY00JOT_d80/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rYXJu/YXRha2EuYi1jZG4u/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEzLzA5L3plYnJh/cy1teXNvcmUtem9v/LmpwZw">
+       <p>
+        Mysore Zoo (or Mysuru Zoo),officially known as Sri Chamarajendra Zoological Gardens, is a composite of zoological gardens and animal park located in the southern Indian city of Mysore, Karnataka. Stretching across a 157-acre (64 ha)-expanse and situated at about 700 metres (0.43 miles) from Mysore Palace, it is the oldest zoo in India and one of the oldest in the world.One of the most popular zoos in India and one of the city's most popular attractions, it is home to a wide range of over 168 species.       </p>
+       <h3>History</h3>
+       <p>
+        Mysore Zoo was created from the private menagerie of Chamaraja Wadiyar X, the twenty-third Maharaja of Mysore. in 1892, on 10 acres (4.0 ha) of the Summer Palace. Over the next 10 years, the zoo was expanded to 45 acres (18 ha) with spacious enclosures that are still in use.
+
+
+        Chamaraja Wadiyar X, the founder of the zoological gardens
+        Originally called the Palace Zoo, it was renamed "Chamarajendra Zoological Gardens" in 1909. A.C. Hughes, from South Wales, was the zoo's first superintendent, serving from 1892 to 1924. Hughes, Sir Mirza Ismail, and G.H. Krumbiegel worked towards refashioning the zoo and updating it with modern, natural enclosures. It now features a bandstand and an artificial lake.
+        
+        In 1948, management of the zoo was devolved to the Department of Parks and Gardens, Government of Mysore. The zoo was expanded first with another 50 acres (20 ha), and then another 150 acres (61 ha) with the acquisition of the Karanji Tank, in which an artificial island has been created as a sanctuary for birds. In 1972, the zoo was entrusted the Forest Department and later in 1979 to the Zoo Authority of Karnataka, the first autonomous organisation in India to manage a zoo.       </p>
+       </div>
+</body>
+</html>
