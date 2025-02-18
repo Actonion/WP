@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #1e3c72;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #2a5298;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="College Email" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button class="btn" onclick="registerUser()">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script>
+        function registerUser() {
+            let username = document.getElementById('username').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let password = document.getElementById('password').value;
+            
+            if (localStorage.getItem(username)) {
+                alert("Username already exists!");
+                return;
+            }
+            
+            let user = {
+                email: email,
+                phone: phone,
+                password: password
+            };
+            localStorage.setItem(username, JSON.stringify(user));
+            alert("Sign-up successful! You can now log in.");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

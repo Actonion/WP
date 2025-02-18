@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List an Item - CampusRent</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #f4a261;
+            color: white;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e76f51;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: white;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            color: #f4a261;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>List an Item for Rent</h2>
+        <form id="listItemForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <textarea id="itemDescription" placeholder="Item Description" rows="4" required></textarea>
+            <select id="itemCategory" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="Books">Books</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Bicycles">Bicycles</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required pattern="^\d{10}$">
+            <input type="email" id="collegeEmail" placeholder="College Email" required pattern="^[a-zA-Z0-9._%+-]+@nitw\.ac\.in$">
+            <button type="submit">Submit Listing</button>
+            <p class="error" id="errorMessage"></p>
+        </form>
+    </div>
+
+
+
+    <script>
+        document.getElementById("listItemForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            let itemName = document.getElementById("itemName").value;
+            let itemDescription = document.getElementById("itemDescription").value;
+            let itemCategory = document.getElementById("itemCategory").value;
+            let phoneNumber = document.getElementById("phoneNumber").value;
+            let collegeEmail = document.getElementById("collegeEmail").value;
+
+            let errorMessage = document.getElementById("errorMessage");
+            
+            // Validate required fields and format
+            if (itemName === "" || itemDescription === "" || itemCategory === "" || phoneNumber === "" || collegeEmail === "") {
+                errorMessage.textContent = "All fields are required!";
+                return;
+            }
+
+            if (!/^\d{10}$/.test(phoneNumber)) {
+                errorMessage.textContent = "Please enter a valid 10-digit phone number.";
+                return;
+            }
+
+            if (!/^[a-zA-Z0-9._%+-]+@nitw\.ac\.in$/.test(collegeEmail)) {
+                errorMessage.textContent = "Please enter a valid NITW college email.";
+                return;
+            }
+
+            // If no errors, proceed with form submission (simulated here)
+            errorMessage.textContent = "";
+            alert("Your item has been listed successfully!");
+
+            // Clear the form (optional)
+            document.getElementById("listItemForm").reset();
+        });
+    </script>
+</body>
+</html>
